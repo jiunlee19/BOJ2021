@@ -1,17 +1,6 @@
 #include <stdio.h>
 #define underHundred 99
 
-int numlong(int N) {
-	int count = 0;
-
-	for (int i = 0; i < 4; i++) {
-		if ((N / 100) == 0) count = 2;
-		else count = 3;
-	}
-
-	return count;
-} //숫자 길이 구하기
-
 int howmany(int N) {
 	int arr[1000];
 	int count = underHundred;
@@ -26,16 +15,14 @@ int howmany(int N) {
 	}
 
 	return count;
-} //몇 개의 한수가 있는지 구하기(3자리 이상의 수 한정)
+}
 
 int main(void) {
 	int N;
-	int count;
 	int hansu;
 
 	scanf_s("%d", &N);
-	count = numlong(N);
-	if (count > 2) hansu = howmany(N);
-	else hansu = N;
+	if (N<100) hansu = N;
+	else hansu = howmany(N);
 	printf("%d", hansu);
 }
