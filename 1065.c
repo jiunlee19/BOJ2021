@@ -10,7 +10,7 @@ int numlong(int N) {
 	}
 
 	return count;
-}
+} //숫자 길이 구하기
 
 int howmany(int N) {
 	int arr[1000];
@@ -26,7 +26,7 @@ int howmany(int N) {
 	}
 
 	return count;
-}
+} //몇 개의 한수가 있는지 구하기(3자리 이상의 수 한정)
 
 int main(void) {
 	int N;
