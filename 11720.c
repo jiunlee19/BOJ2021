@@ -6,7 +6,7 @@ int main(void) {
 
 	scanf_s("%d", &N);
 	for (int i = 0; i < N; i++) {
-		scanf_s("%1d", &num);	//Á¤¼öÇü ÇÑÀÚ¸®¾¿ ¹Þ¾ÆµéÀÌ±â
+		scanf_s("%1d", &num);	//ì •ìˆ˜í˜• í•œìžë¦¬ì”© ë°›ì•„ë“¤ì´ê¸°(%1d)
 		sum += num;
 	}
 	printf("%d", sum);
