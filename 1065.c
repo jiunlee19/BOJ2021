@@ -2,7 +2,6 @@
 #define underHundred 99
 
 int howmany(int N) {
-	int arr[1000];
 	int count = underHundred;
 	int a,b,c;
 
